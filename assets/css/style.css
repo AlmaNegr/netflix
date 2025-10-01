@@ -1,0 +1,107 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #141414;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: #000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: red;
+}
+
+.nav a {
+  color: #fff;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: #aaa;
+}
+
+/* Banner */
+.banner {
+  background: url("https://via.placeholder.com/1200x400") no-repeat center/cover;
+  padding: 100px 20px;
+}
+
+.banner h1 {
+  font-size: 36px;
+}
+
+.banner p {
+  margin: 10px 0;
+}
+
+.banner button {
+  background: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Lista de filmes */
+.filmes {
+  padding: 20px;
+  position: relative;
+}
+
+.lista-filmes {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.lista-filmes img {
+  width: 150px;   /* largura fixa */
+  height: 220px;  /* altura fixa */
+  object-fit: cover; /* corta ou ajusta a imagem sem distorcer */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+
+.lista-filmes img:hover {
+  transform: scale(1.1);
+}
+
+/* Botões de rolagem */
+.filmes button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.7);
+  border: none;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#esquerda {
+  left: 0;
+}
+
+#direita {
+  right: 0;
+}
