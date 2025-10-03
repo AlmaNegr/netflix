@@ -121,3 +121,63 @@ body {
 #direita {
   right: 0;
 }
+
+/* =========== Responsividade ============ */
+/* Tablets */
+@media (max-width: 900px) {
+  .banner {
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .banner h1 {
+    font-size: 28px;
+  }
+
+  .banner p {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .nav a {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+}
+
+/* Celulares */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .banner {
+    padding: 40px 15px;
+  }
+
+  .banner h1 {
+    font-size: 22px;
+  }
+
+  .lista-filmes img {
+    width: 100px;
+    height: 150px;
+  }
+
+  .filmes button {
+    font-size: 16px;
+    padding: 8px;
+  }
+}
